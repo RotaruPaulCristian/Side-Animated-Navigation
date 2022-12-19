@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* The sidenav menu */
+.sidenav-container {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav-container a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Hovering over nav links */
+.sidenav-container a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button */
+.sidenav-container .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Push the page content to the right when the sidebar is open */
+.main-content {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* Style the open button */
+.openbtn {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* Changed the style of the sidenav on smaller screens, where height is less than 450px */
+@media (max-height: 450px) {
+  .sidenav-container {
+    padding-top: 15px;
+  }
+  .sidenav-container a {
+    font-size: 18px;
+  }
+}
